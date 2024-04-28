@@ -7,10 +7,14 @@ const Services = () => {
   const handleClick = () => {
     navigate('/appointment');
   };
+  const handleClickVirtualAssis = () => {
+    navigate('/virassistent');
+  };
 
   return (
    <>
    <div className=" text-gray-600">
+    <h1 className='text-4xl font-mono'>Our Services</h1>
    <div className=" max-h-full flex justify-around items-center h-fit p-32 bg-gradient-to-r from-blue-100 to-purple-300 ">
     <div className="card w-96 shadow-xl bg-white">
    <div className=" bg-green shadow-xl ">
@@ -37,7 +41,7 @@ const Services = () => {
     <h2 className="card-title text-black">Virtual Caretaker!</h2>
     <p>Book a virtual caretaker with your phone</p>
     <div className="card-actions">
-      <button className="btn btn-wide bg-white hover:bg-grey-300">Book now</button>
+      <button className="btn btn-wide bg-white hover:bg-grey-300" onClick={handleClickVirtualAssis}>Book now</button>
     </div>
   </div>
 </div>

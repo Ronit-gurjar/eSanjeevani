@@ -1,5 +1,5 @@
 import Layout  from './layout/Layout'
-import Footer from './components/Navbar/Footer/Footer'
+import Footer from './components/Footer/Footer'
 
 function App() {
 

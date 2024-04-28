@@ -1,4 +1,4 @@
-import Profile from "../components/Navbar/Profile/Profile"
+import Profile from "../components/Profile/Profile"
 import Tillu from "../assets/images/doctor-img01.png"
 
 const UserProfile = () => {

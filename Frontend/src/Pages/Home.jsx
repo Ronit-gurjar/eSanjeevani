@@ -11,7 +11,7 @@ import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
 import { BsArrowRight } from 'react-icons/bs'
 
-import Services from '../components/Navbar/Services/Services';
+import Services from '../components/Services/Services';
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -21,9 +21,7 @@ const Home = () => {
   const handleClick = () => {
     navigate('/appointment');
   };
-
   
-
   return (
       <>
         <div className="p-8 2xl:h-[800px]">
