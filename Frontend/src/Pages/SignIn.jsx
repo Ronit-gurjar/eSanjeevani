@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from 'react-router-dom'
 
-const Login = () => {
+const Signin = () => {
 
   const [formData, setFormData] = useState({
     email: '',
@@ -45,7 +45,7 @@ const Login = () => {
 
           <div className="mt-7">
             <button type="submit" className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 " >
-              Login
+              Signin
             </button>
           </div>
 
@@ -61,4 +61,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Signin;

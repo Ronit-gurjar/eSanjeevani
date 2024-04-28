@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { LuSun, LuMoonStar } from "react-icons/lu";
 
@@ -13,10 +13,14 @@ const toggleTheme = () => {
     
 };
 
+useEffect(() => {
+  document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+}, [isDarkMode]);
+
   return (
     <nav className="navbar bg-base-300 drop-shadow-md rounded-xl">
       <NavLink className="flex-1" to="/">
-        <img src={logo} alt="logo" width="100px" height="100px"/>
+        <img src={logo} alt="logo" width="100px" height="150px"/>
         <h1 className='btn btn-ghost text-xl'>E-Sanjeevani</h1>
       </NavLink>
       <ul className="flex space-x-4">
