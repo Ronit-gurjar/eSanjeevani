@@ -28,7 +28,7 @@ const Home = () => {
           <div className="container">
             <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
 
-              {/* ======= HERO CONTENT START ========= */}
+            
               <div>
                 <div className="flex-col justify-between items-start p-6 lg:w-[570px] p-10 ">
 
@@ -43,7 +43,7 @@ const Home = () => {
 
                 </div>
 
-                {/* ======= HERO COUNTER ========= */}
+              
                 <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row      lg:items-center gap-5 lg:gap-[30px] '>
 
                   <div>
@@ -69,7 +69,7 @@ const Home = () => {
 
                 </div>
               </div>
-              {/* ======= HERO CONTENT END ========= */}
+            
 
               <div className="flex gap-[30px] justify-end">
                 <div>
