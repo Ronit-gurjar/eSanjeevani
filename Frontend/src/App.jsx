@@ -4,7 +4,6 @@ import Footer from './components/Navbar/Footer/Footer'
 function App() {
   return (
     <>
-   
       <Layout />
       <Footer />
     </>
