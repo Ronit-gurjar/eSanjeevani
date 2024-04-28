@@ -21,9 +21,7 @@ const Home = () => {
   const handleClick = () => {
     navigate('/appointment');
   };
-
   
-
   return (
       <>
         <div className="p-8 2xl:h-[800px]">

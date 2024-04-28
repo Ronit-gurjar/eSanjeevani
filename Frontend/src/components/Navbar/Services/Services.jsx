@@ -7,6 +7,9 @@ const Services = () => {
   const handleClick = () => {
     navigate('/appointment');
   };
+  const handleClickVirtualAssis = () => {
+    navigate('/virassistent');
+  };
 
   return (
    <>
@@ -37,7 +40,7 @@ const Services = () => {
     <h2 className="card-title text-black">Virtual Caretaker!</h2>
     <p>Book a virtual caretaker with your phone</p>
     <div className="card-actions">
-      <button className="btn btn-wide bg-white hover:bg-grey-300">Book now</button>
+      <button className="btn btn-wide bg-white hover:bg-grey-300" onClick={handleClickVirtualAssis}>Book now</button>
     </div>
   </div>
 </div>
