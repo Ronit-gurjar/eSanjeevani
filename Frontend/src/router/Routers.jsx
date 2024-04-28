@@ -6,14 +6,9 @@ import Appointment from '../Pages/Appointment'
 import UserProfile from '../Pages/UserProfile'
 import VirtualAssistent from '../Pages/VirtualAssistent'
 import Room from '../Pages/Room'
+import About from '../Pages/About'
 
 import {Routes , Route} from 'react-router-dom'
-
-
-
-
-
-
 
 export default function Routers() {
   return (
@@ -27,6 +22,7 @@ export default function Routers() {
       <Route path='/userprofile' element={<UserProfile/>} />
       <Route path='/virassistent' element={<VirtualAssistent/>} />
       <Route path="/room/:roomId" element={<Room />} />
+      <Route path="/about" element={<About/>} />
     </Routes>
   )
 }

@@ -6,11 +6,12 @@ const Layout = () => {
   return (
    <>
    <Navbar />
-   <main>
+    <main>
         <Routers />
     </main>
    </>
   )
 }
+
 
 export default Layout;
