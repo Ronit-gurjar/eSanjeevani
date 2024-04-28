@@ -1,36 +1,64 @@
+import { useState } from "react"
+import { Link } from 'react-router-dom'
 
+const Login = () => {
 
-const SignIn = () => {
-    return (
-      <>
-      <div className="flex items-center h-screen justify-center ">
-      <form className="w-96 border-solid border-2 border-sky-500 rounded-md">
-   <label className="flex flex-col items-start gap-2 m-8 text-2xl font-black">
-    Name
-    <input type="text" className="grow input input-bordered input-info  bg-slate-100" placeholder="" />
-  </label>
-  <label className="flex flex-col  items-start gap-2 m-8 text-2xl font-black">
-    Number
-    <input type="tel" className="grow input input-bordered input-info bg-slate-100" placeholder="" />
-  </label>
-  <label className="flex flex-col items-start gap-2 m-8 text-2xl font-black">
-    Age
-    <input type="number" className="grow input input-bordered input-info bg-slate-100" placeholder="" />
-  </label>
-  <label className="flex flex-col items-start gap-2 m-8 text-2xl font-black">
-    Address
-    <input type="text" className="grow input input-bordered input-info bg-slate-100" placeholder="" />
-  </label>
-  <label className="flex flex-col items-start gap-2 m-8 text-2xl font-black">
-    Password
-    <input type="password" className="grow input input-bordered input-info bg-slate-100" placeholder="" />
-  </label>
-  
-  
-  </form>
-  </div>
-      </>
-    )
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  })
+
+  const handleInputChange = e => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
   }
-  
-  export default SignIn;
+
+  return (
+    <section className="px-5 lg:px-0">
+      <div className="w-full max-w-[570px] mx-auto rounded-lg shadow-md md:p-10">
+        <h3 className="text-headingColor text-[22px] leading-9 font-bold mb-10 "> Hello! 
+          <span className="text-primaryColor px-2 ">
+            Welcome   
+          </span>
+          Back
+        </h3>
+
+        <form className="py-4 md:py-0">
+          <div className="mb-5">
+            <input type="email"
+              placeholder=" Enter your Email"
+              name="email" value={formData.email}
+              onChange={handleInputChange}
+              className="w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor  cursor-pointer"
+              required
+            />
+          </div>
+
+          <div className="mb-5">
+            <input type="password"
+              placeholder="Password"
+              name="password" value={formData.password}
+              onChange={handleInputChange}
+              className="w-full py-3 border-b border-solid border-[#0066ff61] focus:outline-none focus:border-b-primaryColor text-[16px] leading-7 text-headingColor placeholder:text-textColor  cursor-pointer"
+              required
+            />
+          </div>
+
+          <div className="mt-7">
+            <button type="submit" className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3 " >
+              Login
+            </button>
+          </div>
+
+          <p className="mt-5 text-textColor text-center">
+            Don't have an account?
+            <Link to='/register' className="text-primaryColor font-medium ">
+              Register
+            </Link>
+          </p>
+        </form>
+      </div>
+    </section>
+  )
+}
+
+export default Login;
