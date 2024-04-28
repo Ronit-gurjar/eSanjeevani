@@ -1,8 +1,15 @@
 import React from 'react'
+import Routers from '../router/Routers'
+import Navbar from '../components/navbar'
 
 const Layout = () => {
   return (
-    <div>Layout</div>
+   <>
+   <Navbar />
+   <main>
+        <Routers />
+    </main>
+   </>
   )
 }
 

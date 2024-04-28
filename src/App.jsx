@@ -1,14 +1,10 @@
-
+import React from 'react'
+import Layout  from './layout/Layout'
 
 function App() {
-
-
   return (
     <>
-      
-      <h1>Hello world</h1>
-
-       
+      <Layout />
     </>
   )
 }

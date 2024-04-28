@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
+
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const navigate = useNavigate();
 
-export default Home
+  const handleClick = () => {
+    navigate('/appointment');
+  };
+
+  return (
+    <div>
+      <button className="btn btn-primary" onClick={handleClick}>
+        Make Appointment
+      </button>
+    </div>
+  );
+};
+
+export default Home;
