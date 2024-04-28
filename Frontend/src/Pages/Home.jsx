@@ -11,6 +11,8 @@ import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
 import { BsArrowRight } from 'react-icons/bs'
 
+import Services from '../components/Navbar/Services/Services';
+
 import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -25,18 +27,18 @@ const Home = () => {
   return (
       <>
         <div className="p-8 2xl:h-[800px]">
+         
           <div className="container">
             <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
 
-            
               <div>
-                <div className="flex-col justify-between items-start p-6 lg:w-[570px] p-10 ">
+                <div className="flex-col justify-between items-start p-6 lg:w-[570px] ">
 
-                  <h1 className='text-[36px]  leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px] '>
-                    We help patients live a healthy, longer life .
+                  <h1 className='text-7xl sm:text-4xl '>
+                    We empower <span className='text-yellow-500 font-bold italic'>The Elders</span> to enjoy their golden years.
                   </h1>
 
-                  <p className='m-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus numquam ipsum repellat voluptatibus nemo sed, enim architecto delectus incidunt!
+                  <p className='m-6 text-xl'>With out network of <span className='text-bold'>World's Top Professional Doctors & Medical Firms</span>, We aim to help out our Elder Folks With everything we can...<br/>So They can have it <span>Easy</span>
                   </p>
 
                   <button className='btn btn-outline m-6' onClick={handleClick}> Make an Appointment</button>
@@ -49,21 +51,21 @@ const Home = () => {
                   <div>
                     <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor '>30+
                     </h2>
-                    <span className='w-[100px] h-2 bg-yellowColor rounded-full block mt-[-14px] '></span>
+                    <span className='w-24 h-2 bg-green-500 rounded-full block mt-3 animate-text-in'></span>
                     <p className='text__para '> Years of Experience</p>
                   </div>
 
                   <div>
                     <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor '>15+
                     </h2>
-                    <span className='w-[100px] h-2 bg-purpleColor rounded-full block mt-[-14px] '></span>
+                    <span className='w-24 h-2 bg-purple-500 rounded-full block mt-3 animate-text-in'></span>
                     <p className='text__para '> Clinic Locations</p>
                   </div>
 
                   <div>
                     <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor '>100%
                     </h2>
-                    <span className='w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px] '></span>
+                    <span className='w-24 h-2 bg-blue-500 rounded-full block mt-3 animate-text-in'></span>
                     <p className='text__para '>Customer Satisfaction</p>
                   </div>
 
@@ -81,10 +83,12 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 
-
+         {/* Services Section */}
+         <Services/>
       </>
   );
 };

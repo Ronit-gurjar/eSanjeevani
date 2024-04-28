@@ -1,21 +1,27 @@
 
-
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/appointment');
+  };
+
   return (
    <>
-   <div className="">
-   <div className=" max-h-full flex justify-around justify-center items-center h-fit p-60 bg-gradient-to-r from-blue-100 to-purple-100 ">
+   <div className=" text-gray-600">
+   <div className=" max-h-full flex justify-around items-center h-fit p-32 bg-gradient-to-r from-blue-100 to-purple-300 ">
     <div className="card w-96 shadow-xl bg-white">
    <div className=" bg-green shadow-xl ">
   <figure className="px-6 pt-6">
-    <img src="https://as1.ftcdn.net/v2/jpg/06/61/04/98/1000_F_661049835_fZEl0d0aZxjv0l3HahkCYNjj2uerNzfC.jpg" alt="Shoes" className="rounded-xl" />
+    <img src="https://as1.ftcdn.net/v2/jpg/06/61/04/98/1000_F_661049835_fZEl0d0aZxjv0l3HahkCYNjj2uerNzfC.jpg" alt="doctors" className="rounded-xl" />
   </figure>
   <div className="card-body items-center text-center ">
     <h2 className="card-title text-black">Book appointment!</h2>
     <p>Book appointment fastly and reliable</p>
     <div className="card-actions">
-      <button className="btn btn-wide bg-white hover:bg-grey-300 ">Book now</button>
+      <button className="btn btn-wide bg-white hover:bg-grey-300 " onClick={handleClick}>Book now</button>
     </div>
   </div>
 </div>

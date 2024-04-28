@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-
 import { LuSun, LuMoonStar } from "react-icons/lu";
+
+import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
 
@@ -15,6 +16,7 @@ const toggleTheme = () => {
   return (
     <nav className="navbar bg-base-300 drop-shadow-md rounded-xl">
       <NavLink className="flex-1" to="/">
+        <img src={logo} alt="logo" width="100px" height="100px"/>
         <h1 className='btn btn-ghost text-xl'>E-Sanjeevani</h1>
       </NavLink>
       <ul className="flex space-x-4">
