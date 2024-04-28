@@ -1,6 +1,6 @@
-import React from 'react'
+
 import Routers from '../router/Routers'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar/navbar';
 
 const Layout = () => {
   return (
@@ -13,4 +13,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default Layout;

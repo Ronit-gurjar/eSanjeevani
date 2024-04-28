@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
+
 import { LuSun, LuMoonStar } from "react-icons/lu";
 
 const Navbar = () => {
