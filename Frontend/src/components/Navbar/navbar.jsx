@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
 
-const [isDarkMode, setIsDarkMode] = useState(false); // Initial state is light mode
+const [isDarkMode, setIsDarkMode] = useState('drak'); // Initial state is light mode
 
 const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -30,8 +30,8 @@ useEffect(() => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link hover:text-gray-300" to="/register" activeClassName="active">
-            <button className='btn btn-outline'>Sign In</button>
+          <NavLink className="nav-link hover:text-gray-300" to="/login" activeClassName="active">
+            <button className='btn btn-outline'>Sign in</button>
           </NavLink>
         </li>
         <li>
