@@ -27,18 +27,18 @@ const Home = () => {
   return (
       <>
         <div className="p-8 2xl:h-[800px]">
+         
           <div className="container">
             <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
 
-            
               <div>
                 <div className="flex-col justify-between items-start p-6 lg:w-[570px] ">
 
-                  <h1 className='text-4xl md: text-6xl '>
-                    We help <span className='text-yellow-500 font-bold italic'>Elderlies</span> live a healthy, longer life .
+                  <h1 className='text-7xl sm:text-4xl '>
+                    We empower <span className='text-yellow-500 font-bold italic'>The Elders</span> to enjoy their golden years.
                   </h1>
 
-                  <p className='m-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus numquam ipsum repellat voluptatibus nemo sed, enim architecto delectus incidunt!
+                  <p className='m-6 text-xl'>With out network of <span className='text-bold'>World's Top Professional Doctors & Medical Firms</span>, We aim to help out our Elder Folks With everything we can...<br/>So They can have it <span>Easy</span>
                   </p>
 
                   <button className='btn btn-outline m-6' onClick={handleClick}> Make an Appointment</button>
@@ -83,6 +83,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 
