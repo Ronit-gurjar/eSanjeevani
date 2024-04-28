@@ -18,7 +18,8 @@ const doctorProfileSchema = new mongoose.Schema(
         type: Array,
     },
     virtualCare : {
-        type : Boolean
+        type : Boolean,
+        default:false,
     },
     about: {
         type: String,

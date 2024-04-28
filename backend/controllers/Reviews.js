@@ -17,7 +17,7 @@ export const getAllReviews = async(req,res)=>{
                                             .populate({
                                                 path:"doctor",
                                                 select:"coureName",
-                                            }).exec();;
+                                            }).exec();
 
         res.status(200).json({
             success:true,
@@ -48,8 +48,7 @@ export const createReview = async(req,res)=>{
         const savedReview = await newReview.save();
 
         await Doctor.findByIdAndUpdate(req.body.doctor, {
-            $push: {reviews: savedReview._id},
-        });
+            $push: {reviews: savedReview._id},});
 
 
         res.status(200).json({

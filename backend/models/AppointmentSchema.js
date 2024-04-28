@@ -13,28 +13,18 @@ const AppointmentSchema = new mongoose.Schema({
         ref: 'User',
         required: true,
     },
+    orderId: {
+        type: String,
+    },
     appointmentDate: {
         type: Date,
         required: true,
-    },
-    appointmentTime: {
-        times: TimeRanges,
-        required: true,
-    },
-    reason: {
-        type: String,
-        trim: true,
     },
     status: {
         type: String,
         enum: ['scheduled', 'completed', 'cancelled', 'missed'],
         default: 'scheduled',
     },
-    notes: {
-        type: String,
-        trim: true,
-    },
-
   },
     {
         timestamps: true
