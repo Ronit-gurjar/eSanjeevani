@@ -5,7 +5,7 @@ const Services = () => {
   return (
    <>
    <div className="">
-   <div className=" max-h-full flex justify-around justify-center items-center h-fit p-60 bg-gradient-to-r from-blue-100 to-purple-100 ">
+   <div className=" max-h-full flex justify-around justify-center items-center h-fit p-32 bg-gradient-to-r from-blue-100 to-purple-100 ">
     <div className="card w-96 shadow-xl bg-white">
    <div className=" bg-green shadow-xl ">
   <figure className="px-6 pt-6">
