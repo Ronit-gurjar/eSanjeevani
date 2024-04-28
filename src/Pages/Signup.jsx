@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Signup = () => {
+function Signup() {
+  const [name, setName] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+    console.log('Form submitted! Name:', name);
+    // You can add your form submission logic here, like sending data to a server
+  };
+
   return (
-    <div>Signup</div>
-  )
+    <>
+    </>
+  );
 }
 
-export default Signup
+export default Signup;
