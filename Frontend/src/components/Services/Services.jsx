@@ -14,6 +14,7 @@ const Services = () => {
   return (
    <>
    <div className=" text-gray-600">
+    <h1 className='text-4xl font-mono'>Our Services</h1>
    <div className=" max-h-full flex justify-around items-center h-fit p-32 bg-gradient-to-r from-blue-100 to-purple-300 ">
     <div className="card w-96 shadow-xl bg-white">
    <div className=" bg-green shadow-xl ">
