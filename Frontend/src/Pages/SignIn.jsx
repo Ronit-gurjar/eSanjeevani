@@ -42,7 +42,7 @@ const AdditionalDetails = () => {
         </label>
       </div>
       <div className="relative z-0 w-full mb-5 group">
-      <p className="text-black">Don't have an account? <a href="./Signup.jsx">Register</a></p>
+      <p className="text-black">Don't have an account? <a href="./register">Register</a></p>
     
        
         </div>
